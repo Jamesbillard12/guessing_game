@@ -9,7 +9,7 @@ function testEvent(){
 
   if (answerOne === myAnswerOne) {
     alert('Very well done!')
-  } else { //<=tSomething is happening here
+  } else {
   };
 
   var answerTwo = prompt('Did I go to university on Newfoundland?');
@@ -45,15 +45,16 @@ function testEvent(){
     alert('Wrong! On to the next question!');
   };
 
-  alert("Time for a two answer question! You have to get both answers be to right! What two languages do I speak?");
+  alert("Time for a two answer question! You have to get both answers to be right! What two languages do I speak?");
   var twoPart1 = prompt('Enter answer one here');
   var twoPart2 = prompt('Enter answer two here');
   twoPart1 = twoPart1.toUpperCase();
   twoPart2 = twoPart2.toUpperCase();
 
-  if (twoPart1 === "FRENCH"||"ENGLISH") && (twoPart2 === "FRENCH" || "ENGLISH"); {
+  if ((twoPart1 === "FRENCH"||"ENGLISH") && (twoPart2 === "FRENCH" || "ENGLISH")) {
     alert('Very well done!');
   } else {
     alert('Wrong! On to the next question!');
   };
+  
 }
