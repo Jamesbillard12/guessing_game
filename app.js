@@ -13,10 +13,10 @@ else {
 }
 
 var answerTwo = prompt('Did I go to university on Newfoundland?').toUpperCase();
-answerOne = answerOne.charAt(0)
-var myAnswerOne = 'N';
+answerTwo = answerTwo.charAt(0)
+var myAnswerTwo = 'N';
 
-if (answerOne === myAnswerOne) {
+if (answerTwo === myAnswerTwo) {
   alert('Very well done!')
 }
 else {
@@ -24,21 +24,21 @@ else {
 }
 
 var answerThree = prompt('Do I speak French?').toUpperCase();
-answerOne = answerOne.charAt(0)
-var myAnswerOne = 'Y';
+answerThree = answerThree.charAt(0)
+var myAnswerThree = 'Y';
 
-if (answerOne === myAnswerOne) {
+if (answerThree === myAnswerThree) {
   alert('Very well done!')
 }
 else {
   alert('Wrong! On to the next question!')
 }
 
-var answerThree = prompt('Have I lived in the Yukon Territory?').toUpperCase();
-answerOne = answerOne.charAt(0)
-var myAnswerOne = 'Y';
+var answerFour = prompt('Have I lived in the Yukon Territory?').toUpperCase();
+answerFour = answerFour.charAt(0)
+var myAnswerFour = 'Y';
 
-if (answerOne === myAnswerOne) {
+if (answerFour === myAnswerFour) {
   alert('Very well done!')
 }
 else {

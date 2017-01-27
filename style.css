@@ -1,11 +1,17 @@
 /* selector { property: value;} */
 
-/*element name"/
-h1
+/*element name"*/
+body {
+  font-family: serif;;
+}
 /*by class name*/
 
-.class
+.body {
+  font-family: cursive;
+}
 
 /* by id*/
 
 #id name
+
+#
