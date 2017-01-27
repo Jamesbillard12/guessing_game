@@ -2,16 +2,34 @@
 
 /*element name"*/
 body {
-  font-family: cursive;;
+  font-family: cursive;
 }
 /*by class name*/
 
-.body {
-  font-family: cursive;
+.Education {
+  font-family: fantasy;
 }
 
 /* by id*/
 
-#id name
+/*#id name*/
+#about {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #2e990f;
+  border-width: 40px;
+  float: none;
+}
+#name {
+  font-size: 20px;
+  float: left;
+  margin-top: -10px;
+}
 
-#
+#email {
+  font-family:fantasy;
+  font-size: 10px;
+  float: right;
+  margin-top: -30px;
+
+}
