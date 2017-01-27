@@ -44,4 +44,16 @@ function testEvent(){
   } else {
     alert('Wrong! On to the next question!');
   };
+
+  alert("Time for a two answer question! You have to get both answers be to right! What two languages do I speak?");
+  var twoPart1 = prompt('Enter answer one here');
+  var twoPart2 = prompt('Enter answer two here');
+  twoPart1 = twoPart1.toUpperCase();
+  twoPart2 = twoPart2.toUpperCase();
+
+  if (twoPart1 === "FRENCH"||"ENGLISH") && (twoPart2 === "FRENCH" || "ENGLISH"); {
+    alert('Very well done!');
+  } else {
+    alert('Wrong! On to the next question!');
+  };
 }

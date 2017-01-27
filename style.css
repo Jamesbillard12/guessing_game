@@ -14,22 +14,43 @@ body {
 
 /*#id name*/
 #about {
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #2e990f;
-  border-width: 40px;
   float: none;
+
+  border-width: 40px;
+  border-style: solid;
+  border-color: #5ca612;
+  border-radius: 10px;
+  background-color: #5ca612;
 }
 #name {
-  font-size: 20px;
   float: left;
+  color: white;
   margin-top: -10px;
+  margin-ri;
+  font-size: 20px;
 }
 
 #email {
-  font-family:fantasy;
-  font-size: 10px;
   float: right;
+
   margin-top: -30px;
+
+  font-family:fantasy;
+  font-size: 15px;
+  color: white;
+
+}
+
+#button {
+  background-color: #5ca612;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    margin-left: 200px;
 
 }
