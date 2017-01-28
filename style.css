@@ -95,10 +95,10 @@ address
 {
   position: static;
   right: 0;
-  bottom: -225px;
+  bottom: 100%;
   left: 0;
 
-  width: 981px;
+  width: 100%;
   margin-top: 5px;
   padding: 1rem;
 
