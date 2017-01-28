@@ -1,5 +1,7 @@
-
-#about
+body {
+  background-color: black;
+}
+.about
 {
   float: none;
 
@@ -16,7 +18,7 @@
 {
   font-family: heather;
 
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 30px;
 
   color: white;
@@ -36,26 +38,30 @@
   color: white;
 }
 
-.left {
-	margin-top: 5px;
-	width: 15%;
-	height: 760px;
-	background-color: grey;
-	margin-bottom: 10px;
+#left
+{
+  width: 195px;
+  height: 768px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
   border-style: solid;
   border-color: black;
   border-radius: 5px;
+  background-color: grey;
 }
 
-#wholeAlign
+.wholeAlign
 {
-
   font-family: heather;
+
+  float: right;
+
   width: 80%;
   height: 120%;
   margin-top: 5px;
   margin-right: -10px;
-  float: right;
+
   border-style: solid;
   border-color: black
   border-width: 10px;
@@ -74,11 +80,12 @@
 
 #button
 {
+  font-size: 15px;
 
   margin-top: 150px;
   margin-bottom: 50px;
   margin-left: 275px;
-  font-size: 15px;
+
   border-color: #5ca612;
   border-radius: 10px;
   background-color: #5ca612;
@@ -90,8 +97,10 @@ address
   right: 0;
   bottom: -225px;
   left: 0;
-  padding: 1rem;
+
+  width: 981px;
   margin-top: 5px;
+  padding: 1rem;
 
   text-align-last: center;
 
