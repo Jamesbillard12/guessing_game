@@ -6,13 +6,14 @@ function testEvent(){
   answerOne = answerOne.charAt(0);
   answerOne = answerOne.toUpperCase();
   var myAnswerOne = 'Y';
-
+  
   if (answerOne === myAnswerOne) {
     alert('Very well done!')
   } else {
+    alert('Wrong! Next question!')
   };
 
-  var answerTwo = prompt('Did I go to university on Newfoundland?');
+  var answerTwo = prompt('Did I go to university in Newfoundland?');
   answerTwo = answerTwo.charAt(0);
   answerTwo = answerTwo.toUpperCase();
   var myAnswerTwo = 'N';
@@ -45,24 +46,50 @@ function testEvent(){
     alert('Wrong! On to the next question!');
   };
 
-  alert("Time for a two answer question! You have to get both answers to be right! What two languages do I speak?");
-  var twoPart1 = prompt('Enter answer one here');
-  var twoPart2 = prompt('Enter answer two here');
-  twoPart1 = twoPart1.toUpperCase();
-  twoPart2 = twoPart2.toUpperCase();
 
-  if ((twoPart1 === 'FRENCH'||'ENGLISH') && (twoPart2 === 'FRENCH' || 'ENGLISH')) {
-    alert('Very well done!');
-  } else {
-    alert('Wrong! On to the next question!');
-  };
-
-  var answersSixOptions = ['Guinness', 'Noel', 'Minou'];
+  var answersSixOptions = ['GUINNESS', 'NOEL', 'MINOU'];
   var answerSix = prompt('What is one of my pet\'s name?');
+  answerSix = answerSix.toUpperCase();
 
   if(answersSixOptions.indexOf(answerSix) > -1){
-    alert('Awesome job! We\'re all done!');
+    alert('Awesome job!!');
   } else {
-    alert('You\'re wrong. Sorry to end on a bad note!');
+    alert('You\'re wrong!');
   };
+
+  alert("Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?");
+
+  var twoPart1 = prompt('Enter answer one here.');
+  twoPart1 = twoPart1.toUpperCase();
+
+  var twoPart2 = prompt('Enter answer two here.');
+  twoPart2 = twoPart2.toUpperCase();
+
+  if (twoPart1 === 'FRENCH'){
+    alert('Very well done, you got the first one right!');
+  } else if (twoPart1 === 'ENGLISH') {
+    alert('Very well done, you got the first one right!');
+  } else{
+    alert('Wrong! Let\'s check your other answer!');
+  };
+
+  if (twoPart2 === 'FRENCH'){
+    alert('Very well done, you got the second one right!');
+  } else if (twoPart2 === 'ENGLISH') {
+    alert('Very well done, you got the second one right!');
+  } else{
+    alert('Wrong!');
+  };
+
+  if ((twoPart1 === 'FRENCH') && (twoPart2 === 'ENGLISH')) {
+    alert('Awesome you got them both right!');
+  } else if ((twoPart1 === 'ENGLISH') && (twoPart2 === 'FRENCH')) {
+    alert('Awesome you got them both right!');
+  } else {
+    alert('Thank you for taking my quiz!');
+  };
+
+  alert('Thank you for taking my quiz!')
+
+
 }
