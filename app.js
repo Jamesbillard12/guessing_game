@@ -51,11 +51,18 @@ function testEvent(){
   twoPart1 = twoPart1.toUpperCase();
   twoPart2 = twoPart2.toUpperCase();
 
-  if ((twoPart1 === "FRENCH"||"ENGLISH") && (twoPart2 === "FRENCH" || "ENGLISH")) {
+  if ((twoPart1 === 'FRENCH'||'ENGLISH') && (twoPart2 === 'FRENCH' || 'ENGLISH')) {
     alert('Very well done!');
   } else {
     alert('Wrong! On to the next question!');
   };
 
-  
+  var answersSixOptions = ['Guinness', 'Noel', 'Minou'];
+  var answerSix = prompt('What is one of my pet\'s name?');
+
+  if(answersSixOptions.indexOf(answerSix) > -1){
+    alert('Awesome job! We\'re all done!');
+  } else {
+    alert('You\'re wrong. Sorry to end on a bad note!');
+  };
 }
