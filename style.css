@@ -1,13 +1,12 @@
 /* selector { property: value;} */
 
 /*element name"*/
-body {
-  font-family: cursive;
+
 }
 /*by class name*/
 
 .Education {
-  font-family: fantasy;
+  font-family: ;
 }
 
 /* by id*/
@@ -33,9 +32,9 @@ body {
 #email {
   float: right;
 
-  margin-top: -30px;
+  margin-top: -20px;
 
-  font-family:fantasy;
+  font-family: cursive;
   font-size: 15px;
   color: white;
 
