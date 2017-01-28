@@ -2,12 +2,12 @@
 
 /*element name"*/
 
+address {
+  text-align-last: center;
 }
 /*by class name*/
 
-.Education {
-  font-family: ;
-}
+
 
 /* by id*/
 
@@ -32,24 +32,24 @@
 #email {
   float: right;
 
-  margin-top: -20px;
+  margin-top: -35px;
 
   font-family: cursive;
-  font-size: 15px;
+  font-size: 10px;
   color: white;
+  text-decoration: none;
 
 }
 
 #button {
+
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(50%, 50%);
+  margin-bottom: 20px;
+  border-color: #5ca612;
+  border-radius: 10px;
   background-color: #5ca612;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: relative;
-    margin-left: 200px;
+
 
 }
