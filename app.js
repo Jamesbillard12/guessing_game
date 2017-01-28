@@ -14,6 +14,8 @@ function testEvent(){
     alert('Wrong! Next question!');
   };
 
+  console.log("Question one complete!");
+
   var answerTwo = prompt('Did I go to university in Newfoundland?');
   answerTwo = answerTwo.charAt(0);
   answerTwo = answerTwo.toUpperCase();
@@ -24,6 +26,8 @@ function testEvent(){
   } else {
     alert('Wrong! On to the next question!');
   };
+
+  console.log("Question two complete!");
 
   var answerThree = prompt('Do I speak French?');
   answerThree = answerThree.charAt(0);
@@ -36,6 +40,8 @@ function testEvent(){
     alert('Wrong! On to the next question!');
   };
 
+  console.log("Question three complete");
+
   var answerFour = prompt('Have I lived in the Yukon Territory?');
   answerFour = answerFour.charAt(0);
   answerFour = answerFour.toUpperCase();
@@ -47,6 +53,7 @@ function testEvent(){
     alert('Wrong! On to the next question!');
   };
 
+  console.log("Question five complete");
 
   var answersSixOptions = ['GUINNESS', 'NOEL', 'MINOU'];
   var answerSix = prompt('What is one of my pet\'s name?');
@@ -57,6 +64,8 @@ function testEvent(){
   } else {
     alert('You\'re wrong!');
   };
+
+  console.log("Question five complete")
 
   alert("Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?");
 
@@ -89,6 +98,8 @@ function testEvent(){
   } else {
     alert('Thank you for taking my quiz!');
   };
+
+  console.log("Question six complete")
 
   alert('Thank you for taking my quiz!')
 
