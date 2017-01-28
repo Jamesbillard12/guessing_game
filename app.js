@@ -6,11 +6,12 @@ function testEvent(){
   answerOne = answerOne.charAt(0);
   answerOne = answerOne.toUpperCase();
   var myAnswerOne = 'Y';
-  
+
   if (answerOne === myAnswerOne) {
-    alert('Very well done!')
+    alert('Very well done!');
+    console.log('Answer given was ' + answerOne);
   } else {
-    alert('Wrong! Next question!')
+    alert('Wrong! Next question!');
   };
 
   var answerTwo = prompt('Did I go to university in Newfoundland?');
