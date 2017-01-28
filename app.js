@@ -1,11 +1,17 @@
 function testEvent(){
+
+  var myAnswerOne = 'Y';
+  var myAnswerTwo = 'N';
+  var myAnswerThree = 'Y';
+  var myAnswerFour = 'Y';
+
   var userName = prompt('What\'s your name?');
   alert('Hello, ' + userName + '. Thanks for coming to my site!');
 
   var answerOne = prompt('Was I born in Newfoundland?');
   answerOne = answerOne.charAt(0);
   answerOne = answerOne.toUpperCase();
-  var myAnswerOne = 'Y';
+
 
   if (answerOne === myAnswerOne) {
     alert('Very well done!');
@@ -19,7 +25,7 @@ function testEvent(){
   var answerTwo = prompt('Did I go to university in Newfoundland?');
   answerTwo = answerTwo.charAt(0);
   answerTwo = answerTwo.toUpperCase();
-  var myAnswerTwo = 'N';
+
 
   if (answerTwo === myAnswerTwo) {
     alert('Very well done!');
@@ -32,7 +38,7 @@ function testEvent(){
   var answerThree = prompt('Do I speak French?');
   answerThree = answerThree.charAt(0);
   answerThree = answerThree.toUpperCase();
-  var myAnswerThree = 'Y';
+
 
   if (answerThree === myAnswerThree) {
     alert('Very well done!');
@@ -45,7 +51,7 @@ function testEvent(){
   var answerFour = prompt('Have I lived in the Yukon Territory?');
   answerFour = answerFour.charAt(0);
   answerFour = answerFour.toUpperCase();
-  var myAnswerFour = 'Y';
+
 
   if (answerFour === myAnswerFour) {
     alert('Very well done!');
