@@ -92,16 +92,14 @@ function testEvent(){
   };
 
   if ((twoPart1 === 'FRENCH') && (twoPart2 === 'ENGLISH')) {
-    alert('Awesome you got them both right!');
+    alert('Awesome you got them both right! Thank you for taking my quiz!');
   } else if ((twoPart1 === 'ENGLISH') && (twoPart2 === 'FRENCH')) {
-    alert('Awesome you got them both right!');
+    alert('Awesome you got them both right! Thank you for taking my quiz!');
   } else {
     alert('Thank you for taking my quiz!');
   };
 
-  console.log("Question six complete")
-
-  alert('Thank you for taking my quiz!')
+  console.log("Question six complete");
 
 
 }
