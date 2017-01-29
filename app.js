@@ -156,7 +156,7 @@ function testEvent(){
       }
     };
     percentage = tallyScore / 8 * 100;
-    
+
   alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
   + '%. Thank you for playing ' + userName +'!');
 
