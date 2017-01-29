@@ -18,6 +18,7 @@ function testEvent(){
 
   if (answerOne === myAnswerOne) {
     alert('Very well done!');
+    tallyScore = tallyScore++
     console.log('Answer given was ' + answerOne);
   } else {
     alert('Wrong! Next question!');
@@ -116,6 +117,7 @@ function testEvent(){
     counterSeven = counterSeven + 1;
     if(userNumber === myNumber){
       alert('Great job ' + userName +', You guessed my number!');
+
       break;
     }
     if(counterSeven === 4){
@@ -138,6 +140,7 @@ function testEvent(){
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
         alert('Great job! your answer was correct!');
+
         break;
       }else{
         alert('Please Try again');
@@ -148,5 +151,4 @@ function testEvent(){
   // with a personalized custom message that includes the number of correct answers
   // and also addresses the user by name, e.g. "You got 4 out of 7 questions correct,
   // Bobbi! Better luck next time."
-
 }
