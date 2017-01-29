@@ -7,6 +7,8 @@ function testEvent(){
   var answersSixOptions = ['GUINNESS', 'NOEL', 'MINOU'];
   var myNumber = 7;
   var counterSeven = 0;
+  var tallyScore = 0;
+  var percentage = 0;
 
   var userName = prompt('What\'s your name?');
   alert('Hello, ' + userName + '. Thanks for coming to my site!');
@@ -18,7 +20,7 @@ function testEvent(){
 
   if (answerOne === myAnswerOne) {
     alert('Very well done!');
-    tallyScore = tallyScore++
+    tallyScore = tallyScore + 1;
     console.log('Answer given was ' + answerOne);
   } else {
     alert('Wrong! Next question!');
@@ -33,6 +35,7 @@ function testEvent(){
 
   if (answerTwo === myAnswerTwo) {
     alert('Very well done!');
+    tallyScore = tallyScore + 1;
   } else {
     alert('Wrong! On to the next question!');
   };
@@ -46,6 +49,7 @@ function testEvent(){
 
   if (answerThree === myAnswerThree) {
     alert('Very well done!');
+    tallyScore = tallyScore + 1;
   } else {
     alert('Wrong! On to the next question!');
   };
@@ -59,6 +63,7 @@ function testEvent(){
 
   if (answerFour === myAnswerFour) {
     alert('Very well done!');
+    tallyScore = tallyScore + 1;
   } else {
     alert('Wrong! On to the next question!');
   };
@@ -70,6 +75,7 @@ function testEvent(){
 
   if(answersSixOptions.indexOf(userResponsePet) !== -1){
     alert('Awesome job!!');
+    tallyScore = tallyScore + 1;
   } else {
     alert('You\'re wrong!');
   };
@@ -101,9 +107,11 @@ function testEvent(){
   };
 
   if ((userLanguageResponse1 === 'FRENCH') && (userlanguagResponse2 === 'ENGLISH')) {
-    alert('Awesome you got them both right! Thank you for taking my quiz!');
+    alert('Awesome you got them both right!');
+    tallyScore = tallyScore + 1;
   } else if ((userLanguageResponse1 === 'ENGLISH') && (userlanguagResponse2 === 'FRENCH')) {
     alert('Awesome you got them both right!');
+    tallyScore = tallyScore + 1;
   } else {
     alert('On to the next question!');
   };
@@ -112,11 +120,11 @@ function testEvent(){
 
   var userNumber = parseInt(prompt('I am thinking of a number between 1 and 10, what is it?? (You have 4 guesses)'));
 
-  fix quotations
   while (counterSeven < 4){
     counterSeven = counterSeven + 1;
     if(userNumber === myNumber){
       alert('Great job ' + userName +', You guessed my number!');
+      tallyScore = tallyScore + 1;
 
       break;
     }
@@ -135,20 +143,21 @@ function testEvent(){
 
     for(var i = 0; i < 6; i++){
       var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
-      var userPlacesAnswers = prompt('Last one! Can you guess what countries i\'ve lived in?');
+      var userPlacesAnswers = prompt('Last one! Can you guess what countries I\'ve lived in?');
       userPlacesAnswers = userPlacesAnswers.toUpperCase();
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
         alert('Great job! your answer was correct!');
+        tallyScore = tallyScore + 1;
 
         break;
       }else{
         alert('Please Try again');
       }
     };
-  // As a developer, I want to keep a tally of the total number of correct answers
-  // given by the user, and at the end of the game, tell the user how well they did
-  // with a personalized custom message that includes the number of correct answers
-  // and also addresses the user by name, e.g. "You got 4 out of 7 questions correct,
-  // Bobbi! Better luck next time."
+    percentage = tallyScore / 8 * 100;
+    
+  alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+  + '%. Thank you for playing ' + userName +'!');
+
 }
