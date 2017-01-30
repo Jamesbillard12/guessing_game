@@ -1,13 +1,16 @@
 body {
   background-color: black;
+  background-image: url("http://www.newfoundlandlabrador.com/Content/images/homepage-slides/slide-7.jpg");
+  background-size: auto;
+  background-position: top center;;
 }
 .about
 {
   float: none;
 
   width: 1022px;
-  height: 10%;
-
+  height: 70px;
+  opacity: 0.5;
   border-width: 5px;
   border-style: solid;
   border-color: black;
@@ -17,21 +20,21 @@ body {
 #name
 {
   font-family: heather;
-
-  margin-top: 15px;
+  opacity: 100;
+  margin-top: -55px;
   margin-left: 30px;
-
+  position: absolute;
   color: white;
 }
 #email
 {
   font-family: heather;
   font-size: 15px;
-
+  position: absolute;
   float: right;
 
-  margin-top: -50px;
-  margin-right: 20px;
+  margin-top: -63px;
+  margin-left: 817px;
 
   text-decoration: none;
 
@@ -48,6 +51,7 @@ body {
   height: 904px;
   margin-top: -910px;
   margin-bottom: 5px;
+  opacity: 0.5;
 
   border-style: solid;
   border-color: black;
@@ -113,10 +117,10 @@ address
   right: 0;
   bottom: 100%;
   left: 0;
-
+  height: 122px;
   width: 1022px;
   margin-top: 5px;
-
+  opacity: 0.5;
 
   text-align-last: center;
 
@@ -125,4 +129,14 @@ address
   border-color: black;
   border-radius: 10px;
   background-color: #5ca612;
+}
+
+#addy{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 323px;
+  position: absolute;
+  margin-top: -74px;
 }
