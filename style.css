@@ -5,7 +5,7 @@ body {
 {
   float: none;
 
-  width: 100%;
+  width: 1022px;
   height: 10%;
 
   border-width: 5px;
@@ -40,9 +40,10 @@ body {
 
 #left
 {
-  width: 19%;
-  height: 876px;
-  margin-top: 5px;
+  float: left;
+  width: 200px;
+  height: 904px;
+  margin-top: -910px;
   margin-bottom: 5px;
 
   border-style: solid;
@@ -51,17 +52,27 @@ body {
   background-color: grey;
 }
 
+#coverPhoto {
+  width: 304px;
+    height: 228px;
+    position: absolute;
+    left: 678px;
+    top: 136px;
+}
+
 .wholeAlign
 {
   font-family: heather;
 
-  float: right;
+
   padding-left: 10px;
 
-  width: 79%;
+  margin-left: 210px;
+  width: 803px;
   height: 90%;
   margin-top: 5px;
   margin-right: -9px;
+  position:static;
 
   border-style: solid;
   border-color: black
@@ -85,6 +96,7 @@ body {
   margin-bottom: 50px;
   margin-left: 275px;
   padding-bottom: 21px;
+  padding-top: 14px;
 
   border-color: #5ca612;
   border-radius: 10px;
@@ -98,7 +110,7 @@ address
   bottom: 100%;
   left: 0;
 
-  width: 100.5%;
+  width: 1022px;
   margin-top: 5px;
 
 
