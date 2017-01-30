@@ -37,6 +37,9 @@ body {
 
   color: white;
 }
+#bold{
+  font-weight: 900;
+}
 
 #left
 {

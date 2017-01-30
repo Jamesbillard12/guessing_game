@@ -123,7 +123,7 @@ function testEvent(){
   while (counterSeven < 4){
     counterSeven = counterSeven + 1;
     if(userNumber === myNumber){
-      alert('Great job ' + userName +', You guessed my number!');
+      alert('Great job ' + userName +', you guessed my number!');
       tallyScore = tallyScore + 1;
 
       break;
@@ -139,7 +139,12 @@ function testEvent(){
       alert('That number is too low!');
       userNumber = parseInt(prompt('What number am I thinking of?'));
     }
+    else{
+      alert("Please enter a number.");
+      userNumber = parseInt(prompt('What number am I thinking of?'));
+    }
   };
+
 
   for(var i = 0; i < 6; i++){
     var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
@@ -171,4 +176,4 @@ function testEvent(){
   }
 
 
-}
+};
