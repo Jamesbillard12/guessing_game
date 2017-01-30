@@ -54,10 +54,10 @@ body {
 
 #coverPhoto {
   width: 304px;
-    height: 228px;
-    position: absolute;
-    left: 678px;
-    top: 136px;
+  height: 228px;
+  position: absolute;
+  left: 678px;
+  top: 136px;
 }
 
 .wholeAlign
@@ -97,6 +97,7 @@ body {
   margin-left: 275px;
   padding-bottom: 21px;
   padding-top: 14px;
+  text-decoration-color: white;
 
   border-color: #5ca612;
   border-radius: 10px;
