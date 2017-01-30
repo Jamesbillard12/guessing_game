@@ -141,23 +141,34 @@ function testEvent(){
     }
   };
 
-    for(var i = 0; i < 6; i++){
-      var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
-      var userPlacesAnswers = prompt('Last one! Can you guess what countries I\'ve lived in?');
-      userPlacesAnswers = userPlacesAnswers.toUpperCase();
+  for(var i = 0; i < 6; i++){
+    var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
+    var userPlacesAnswers = prompt('Last one! Can you guess what countries I\'ve lived in?');
+    userPlacesAnswers = userPlacesAnswers.toUpperCase();
 
-      if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
-        alert('Great job! your answer was correct!');
-        tallyScore = tallyScore + 1;
+    if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
+      alert('Great job! your answer was correct!');
+      tallyScore = tallyScore + 1;
 
-        break;
-      }else{
-        alert('Please Try again');
-      }
-    };
-    percentage = tallyScore / 8 * 100;
+      break;
+    }else{
+      alert('Please Try again');
+    }
+  };
+  percentage = tallyScore / 8 * 100;
 
-  alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
-  + '%. Thank you for playing ' + userName +'!');
+  if (tallyScore < 5) {
+    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    + '%. Better luck next time, ' + userName +'!');
+  }
+  if (tallyScore >= 5) {
+    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    + '%. Pretty good job, ' + userName +'!');
+  }
+  if (tallyScore === 10) {
+    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    + '%. Amazing job, ' + userName +', you got them all right!');
+  }
+
 
 }
