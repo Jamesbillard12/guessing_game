@@ -162,17 +162,15 @@ function testEvent(){
   };
   percentage = tallyScore / 8 * 100;
 
-  if (tallyScore < 5) {
-    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
-    + '%. Better luck next time, ' + userName +'!');
-  }
-  if (tallyScore >= 5) {
-    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
-    + '%. Pretty good job, ' + userName +'!');
-  }
-  if (tallyScore === 10) {
+  if (tallyScore === 8) {
     alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
     + '%. Amazing job, ' + userName +', you got them all right!');
+  }else if (tallyScore < 5) {
+    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    + '%. Better luck next time, ' + userName +'!');
+  }else if (tallyScore >= 5) {
+    alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    + '%. Pretty good job, ' + userName +'!');
   }
 
 
