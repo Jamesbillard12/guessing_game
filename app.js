@@ -15,10 +15,9 @@ function testEvent(){
   var userName = prompt('What\'s your name?');
   alert('Hello, ' + userName + '. Thanks for coming to my site!');
   }
-
   questionOne();
 //
-  function questionOne() {
+  function questionTwo() {
     var answerOne = prompt('Was I born in Newfoundland?');
     answerOne = answerOne.charAt(0);
     answerOne = answerOne.toUpperCase();
@@ -35,7 +34,7 @@ function testEvent(){
     console.log("Question one complete!");
   }
 //
-  function questionOne() {
+  function questionThree() {
     var answerTwo = prompt('Did I go to university in Newfoundland?');
     answerTwo = answerTwo.charAt(0);
     answerTwo = answerTwo.toUpperCase();
@@ -53,7 +52,7 @@ function testEvent(){
 
 
 //
-  function questionOne() {
+  function questionFour() {
     var answerThree = prompt('Do I speak French?');
     answerThree = answerThree.charAt(0);
     answerThree = answerThree.toUpperCase();
@@ -71,7 +70,7 @@ function testEvent(){
 
 
 //
-  function questionOne() {
+  function questionFive() {
     var answerFour = prompt('Have I lived in the Yukon Territory?');
     answerFour = answerFour.charAt(0);
     answerFour = answerFour.toUpperCase();
@@ -89,7 +88,7 @@ function testEvent(){
 
 
   //
-    function questionOne() {
+    function questionSix() {
       var userResponsePet = prompt('What is one of my pet\'s name?');
       userResponsePet = userResponsePet.toUpperCase();
 
@@ -105,7 +104,7 @@ function testEvent(){
 
 
   //
-    function questionOne() {
+    function questionSeven() {
       alert("Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?");
 
       var userLanguageResponse1 = prompt('Enter answer one here.');
@@ -145,7 +144,7 @@ function testEvent(){
 
 
   //
-    function questionOne() {
+    function questionEight() {
       var userNumber = parseInt(prompt('I am thinking of a number between 1 and 10, what is it?? (You have 4 guesses)'));
 
       while (counterSeven < 4){
@@ -176,7 +175,7 @@ function testEvent(){
 
 
   //
-    function questionOne() {
+    function questionNine() {
       for(var i = 0; i < 6; i++){
         var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
         var userPlacesAnswers = prompt('Last one! Can you guess what countries I\'ve lived in?');
@@ -195,7 +194,7 @@ function testEvent(){
 
 
   //
-    function questionOne() {
+    function tallyScore() {
       percentage = tallyScore / 8 * 100;
 
       if (tallyScore === 8) {
