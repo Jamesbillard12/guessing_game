@@ -5,11 +5,12 @@ function testEvent(){
   var counterSeven = 0;
   var tallyScore = 0;
   var percentage = 0;
-  var questions = [
+  var myYesNoQuestions = [
     ["Was I born in Newfoundland?", "Y", "Yes, I was born in Newfoundland!"],
     ["Did I go to university in Newfoundland?", "N", "You\'re right, I went to university in Nova Scotia!"],
-    ["Do I speak French?", "Y", "Oui! je parle bien le Francais!"],
-    ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.']
+    ["Do I speak French?", "Y", "Oui! Je parle bien le Francais!"],
+    ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.'],
+    ['Is my favorite movie FUBAR?', 'Y', 'Right! I love that movie "Just Giver"'],
   ];
 
 
@@ -24,10 +25,11 @@ function testEvent(){
 
   function yesNoQuestions() {
 
-    for (var i = 0; i < questions.length; i++) {
-      var answer = prompt(questions[i][0]);
-      if (answer.toUpperCase() == questions[i][1]) {
-        alert(questions[i][2]);
+    for (var i = 0; i < myYesNoQuestions.length; i++) {
+      var userAnswer = prompt(myYesNoQuestions[i][0]);
+      userAnswer = userAnswer.charAt(0);
+      if (userAnswer.toUpperCase() == myYesNoQuestions[i][1]) {
+        alert(myYesNoQuestions[i][2]);
         tallyScore++;
       }
       else {
@@ -124,8 +126,8 @@ function testEvent(){
   //
   function questionNine() {
     for(var i = 0; i < 6; i++){
-      var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA', 'USA', 'UNITED STATES OF AMERICA', 'US', 'UNITED STATES'];
-      var userPlacesAnswers = prompt('Last one! Can you guess what countries I\'ve lived in?');
+      var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA'];
+      var userPlacesAnswers = prompt('Last one! Can you guess another country I\'ve lived in?');
       userPlacesAnswers = userPlacesAnswers.toUpperCase();
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
@@ -141,16 +143,16 @@ function testEvent(){
   questionNine();
   //
   function totalScore() {
-    percentage = tallyScore / 8 * 100;
+    percentage = tallyScore / 9 * 100;
 
-    if (tallyScore === 8) {
-      alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+    if (tallyScore === 9) {
+      alert('You got ' + tallyScore + ' out of 9 questions. That\'s a percentage of ' + percentage
       + '%. Amazing job, ' + userName +', you got them all right!');
     }else if (tallyScore < 5) {
-      alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+      alert('You got ' + tallyScore + ' out of 9 questions. That\'s a percentage of ' + percentage
       + '%. Better luck next time, ' + userName +'!');
     }else if (tallyScore >= 5) {
-      alert('You got ' + tallyScore + ' out of 8 questions. That\'s a percentage of ' + percentage
+      alert('You got ' + tallyScore + ' out of 9 questions. That\'s a percentage of ' + percentage
       + '%. Pretty good job, ' + userName +'!');
     }
   }
