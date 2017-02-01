@@ -33,6 +33,7 @@ function testEvent(){
 
     console.log("Question one complete!");
   }
+  questionTwo();
 //
   function questionThree() {
     var answerTwo = prompt('Did I go to university in Newfoundland?');
@@ -49,8 +50,7 @@ function testEvent(){
 
     console.log("Question two complete!");
   }
-
-
+  questionThree();
 //
   function questionFour() {
     var answerThree = prompt('Do I speak French?');
@@ -67,8 +67,7 @@ function testEvent(){
 
     console.log("Question three complete");
   }
-
-
+  questionFour();
 //
   function questionFive() {
     var answerFour = prompt('Have I lived in the Yukon Territory?');
@@ -85,8 +84,7 @@ function testEvent(){
 
     console.log("Question five complete");
   }
-
-
+  questionFive();
   //
     function questionSix() {
       var userResponsePet = prompt('What is one of my pet\'s name?');
@@ -101,8 +99,7 @@ function testEvent(){
 
       console.log("Question five complete")
     }
-
-
+  questionSix();
   //
     function questionSeven() {
       alert("Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?");
@@ -141,8 +138,7 @@ function testEvent(){
 
       console.log("Question six complete");
     }
-
-
+  questionSeven();
   //
     function questionEight() {
       var userNumber = parseInt(prompt('I am thinking of a number between 1 and 10, what is it?? (You have 4 guesses)'));
@@ -172,8 +168,7 @@ function testEvent(){
         }
       };
     }
-
-
+  questionEight();
   //
     function questionNine() {
       for(var i = 0; i < 6; i++){
@@ -191,8 +186,7 @@ function testEvent(){
         }
       };
     }
-
-
+  questionNine();
   //
     function tallyScore() {
       percentage = tallyScore / 8 * 100;
@@ -208,4 +202,5 @@ function testEvent(){
         + '%. Pretty good job, ' + userName +'!');
       }
     }
+    tallyScore();
 };
