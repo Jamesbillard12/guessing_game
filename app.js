@@ -5,11 +5,12 @@ function testEvent(){
   var counterSeven = 0;
   var tallyScore = 0;
   var percentage = 0;
-  var questions = [
+  var myYesNoQuestions = [
     ["Was I born in Newfoundland?", "Y", "Yes, I was born in Newfoundland!"],
     ["Did I go to university in Newfoundland?", "N", "You\'re right, I went to university in Nova Scotia!"],
-    ["Do I speak French?", "Y", "Oui! je parle bien le Francais!"],
-    ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.']
+    ["Do I speak French?", "Y", "Oui! Je parle bien le Francais!"],
+    ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.'],
+    ['Is my favorite movie FUBAR?', 'Y', 'Right! I love that movie "Just Giver"']
   ];
 
 
@@ -25,9 +26,9 @@ function testEvent(){
   function yesNoQuestions() {
 
     for (var i = 0; i < questions.length; i++) {
-      var answer = prompt(questions[i][0]);
-      if (answer.toUpperCase() == questions[i][1]) {
-        alert(questions[i][2]);
+      var answer = prompt(myYesNoQuestions[i][0]);
+      if (answer.toUpperCase() == myYesNoQuestions[i][1]) {
+        alert(myYesNoQuestions[i][2]);
         tallyScore++;
       }
       else {
