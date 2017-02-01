@@ -10,8 +10,13 @@ function testEvent(){
   var tallyScore = 0;
   var percentage = 0;
 
+  function questionOne() {
+
   var userName = prompt('What\'s your name?');
   alert('Hello, ' + userName + '. Thanks for coming to my site!');
+  }
+
+  questionOne();
 
   var answerOne = prompt('Was I born in Newfoundland?');
   answerOne = answerOne.charAt(0);
