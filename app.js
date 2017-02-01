@@ -6,9 +6,9 @@ function testEvent(){
   var tallyScore = 0;
   var percentage = 0;
   var myYesNoQuestions = [
-    ["Was I born in Newfoundland?", "Y", "Yes, I was born in Newfoundland!"],
-    ["Did I go to university in Newfoundland?", "N", "You\'re right, I went to university in Nova Scotia!"],
-    ["Do I speak French?", "Y", "Oui! Je parle bien le Francais!"],
+    ['Was I born in Newfoundland?', 'Y', 'Yes, I was born in Newfoundland!'],
+    ['Did I go to university in Newfoundland?', 'N', 'You\'re right, I went to university in Nova Scotia!'],
+    ['Do I speak French?', 'Y', 'Oui! Je parle bien le Français!'],
     ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.'],
     ['Is my favorite movie FUBAR?', 'Y', 'Right! I love that movie "Just Giver"'],
   ];
@@ -51,12 +51,12 @@ function testEvent(){
       alert('You\'re wrong!');
     };
 
-    console.log("Question five complete")
+    console.log('Question five complete')
   }
   questionSix();
   //
   function questionSeven() {
-    alert("Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?");
+    alert('Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?');
 
     var userLanguageResponse1 = prompt('Enter answer one here.');
     userLanguageResponse1 = userLanguageResponse1.toUpperCase();
@@ -90,7 +90,7 @@ function testEvent(){
       alert('On to the next question!');
     };
 
-    console.log("Question six complete");
+    console.log('Question six complete');
   }
   questionSeven();
   //
@@ -117,7 +117,7 @@ function testEvent(){
         userNumber = parseInt(prompt('What number am I thinking of?'));
       }
       else{
-        alert("Please enter a number.");
+        alert('Please enter a number.');
         userNumber = parseInt(prompt('What number am I thinking of?'));
       }
     };
