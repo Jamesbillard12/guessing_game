@@ -1,15 +1,19 @@
 function testEvent(){
 
-  var myAnswerOne = 'Y';
-  var myAnswerTwo = 'N';
-  var myAnswerThree = 'Y';
-  var myAnswerFour = 'Y';
   var answersSixOptions = ['GUINNESS', 'NOEL', 'MINOU'];
   var myNumber = 7;
   var counterSeven = 0;
   var tallyScore = 0;
   var percentage = 0;
-  //
+  var questions = [
+    ["Was I born in Newfoundland?", "Y", "Yes, I was born in Newfoundland!"],
+    ["Did I go to university in Newfoundland?", "N", "You\'re right, I went to university in Nova Scotia!"],
+    ["Do I speak French?", "Y", "Oui! je parle bien le Francais!"],
+    ['Have I lived in the Yukon Territory?', 'Y', 'Right! I lived there for two years.']
+  ];
+
+
+
   function questionOne() {
 
     var userName = prompt('What\'s your name?');
@@ -18,76 +22,22 @@ function testEvent(){
   }
   questionOne();
 
-  //
-  function questionTwo() {
-    var answerOne = prompt('Was I born in Newfoundland?');
-    answerOne = answerOne.charAt(0);
-    answerOne = answerOne.toUpperCase();
+  function yesNoQuestions() {
+
+    for (var i = 0; i < questions.length; i++) {
+      var answer = prompt(questions[i][0]);
+      if (answer.toUpperCase() == questions[i][1]) {
+        alert(questions[i][2]);
+        tallyScore++;
+      }
+      else {
+        alert('Wrong! Next question!');
+      }
+    }
+  };
+  yesNoQuestions();
 
 
-    if (answerOne === myAnswerOne) {
-      alert('Very well done!');
-      tallyScore = tallyScore + 1;
-      console.log('Answer given was ' + answerOne);
-    } else {
-      alert('Wrong! Next question!');
-    };
-
-    console.log("Question one complete!");
-  }
-  questionTwo();
-  //
-  function questionThree() {
-    var answerTwo = prompt('Did I go to university in Newfoundland?');
-    answerTwo = answerTwo.charAt(0);
-    answerTwo = answerTwo.toUpperCase();
-
-
-    if (answerTwo === myAnswerTwo) {
-      alert('Very well done!');
-      tallyScore = tallyScore + 1;
-    } else {
-      alert('Wrong! On to the next question!');
-    };
-
-    console.log("Question two complete!");
-  }
-  questionThree();
-  //
-  function questionFour() {
-    var answerThree = prompt('Do I speak French?');
-    answerThree = answerThree.charAt(0);
-    answerThree = answerThree.toUpperCase();
-
-
-    if (answerThree === myAnswerThree) {
-      alert('Very well done!');
-      tallyScore = tallyScore + 1;
-    } else {
-      alert('Wrong! On to the next question!');
-    };
-
-    console.log("Question three complete");
-  }
-  questionFour();
-  //
-  function questionFive() {
-    var answerFour = prompt('Have I lived in the Yukon Territory?');
-    answerFour = answerFour.charAt(0);
-    answerFour = answerFour.toUpperCase();
-
-
-    if (answerFour === myAnswerFour) {
-      alert('Very well done!');
-      tallyScore = tallyScore + 1;
-    } else {
-      alert('Wrong! On to the next question!');
-    };
-
-    console.log("Question five complete");
-  }
-  questionFive();
-  //
   function questionSix() {
     var userResponsePet = prompt('What is one of my pet\'s name?');
     userResponsePet = userResponsePet.toUpperCase();
