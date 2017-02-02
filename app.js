@@ -13,11 +13,11 @@ function testEvent(){
     ['Is my favorite movie FUBAR?', 'Y', 'Right! I love that movie "Just Giver"'],
   ];
 
-
+  var userName;
 
   function questionOne() {
 
-    var userName = prompt('What\'s your name?');
+    userName = prompt('What\'s your name?');
     alert('Hello, ' + userName + '. Thanks for coming to my site!');
     window.userName = userName;
   }
@@ -143,7 +143,8 @@ function testEvent(){
   questionNine();
   //
   function totalScore() {
-    percentage = tallyScore / 9 * 100;
+    var percentage = (tallyScore / 9 * 100);
+    percentage = Math.round(percentage);
 
     if (tallyScore === 9) {
       alert('You got ' + tallyScore + ' out of 9 questions. That\'s a percentage of ' + percentage
