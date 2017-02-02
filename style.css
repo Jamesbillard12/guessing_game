@@ -9,34 +9,35 @@ body {
 {
   float: none;
 
-  width: 1022px;
-  height: 70px;
+  width: 80%;
   opacity: 0.5;
   border-width: 5px;
   border-style: solid;
   border-color: black;
   border-radius: 10px;
   background-color: #5ca612;
-  margin-left: 21px;
+  margin-left: 1.5%;
+  padding-top: 77px
 }
 #name
 {
   font-family: heather;
   opacity: 100;
-  margin-top: -55px;
-  margin-left: 64px;
+  margin-left: 2%;
   position: absolute;
   color: white;
+  font-size: 2vw;
+  top: 8px;
 }
 #email
 {
   font-family: heather;
-  font-size: 15px;
+  font-size: 1.3vw;
   position: absolute;
   float: right;
 
-  margin-top: -63px;
-  margin-left: 822px;
+  margin-top: -5%;
+  margin-left: 58%;
 
   text-decoration: none;
 
@@ -48,13 +49,13 @@ body {
 
 #left
 {
-  float: left;
-  width: 200px;
-  height: 904px;
-  margin-top: -911px;
-  margin-bottom: 5px;
-  margin-left: 23px;
+  width: 15%;
+  height: 100%;
+  margin-top: -71%;
+  margin-left: 1.8%;
   opacity: 0.5;
+
+  padding-bottom: 70%;
 
   border-style: solid;
   border-color: black;
@@ -95,11 +96,10 @@ body {
 }
 
 #coverPhoto {
-  width: 304px;
-  height: 228px;
+  width: 24%;
   position: absolute;
-  left: 695px;
-  top: 136px;
+  left: 53%;
+  top: 33%;
 }
 
 .wholeAlign
@@ -109,27 +109,18 @@ body {
 
   padding-left: 10px;
 
-  margin-left: 232px;
-  width: 803px;
+  margin-left: 17.5%;
+  width: 63.5%;
   height: 90%;
-  margin-top: 5px;
-  margin-right: -9px;
+
+
   position:static;
 
   border-style: solid;
-  border-color: black
-  border-width: 10px;
+  border-color: black;
+  border-width: 5px;
   border-radius: 5px;
-  background: rgba(255,175,75,1);
-  background:    -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(47%, rgba(255,146,10,.77)), color-stop(93%, rgba(255,146,10,.55)));
-  background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-  background:      -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-  background:     -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-  background:         linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
+  background:linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
 }
 
 #button
@@ -148,15 +139,14 @@ body {
 
 address
 {
-  position: static;
-  right: 0;
-  bottom: 100%;
-  left: 0;
+  position: absolute;;
   height: 122px;
-  width: 1022px;
+  width: 80%;
   margin-top: 5px;
-  margin-left: 21px;
+  margin-left: 1.5%;
   opacity: 0.5;
+  top: 998px;
+  left: 5px;
 
   border-style: solid;
   border-color: black;
@@ -167,9 +157,9 @@ address
 #addy{
   color: white;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-bottom: 20px;
-  margin-left: 418px;
+  margin-left: 30%;
   position: absolute;
-  margin-top: -74px;
+  margin-top: 4%;
 }
