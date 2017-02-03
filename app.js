@@ -22,109 +22,111 @@ function testEvent(){
     window.userName = userName;
   }
   questionOne();
-
-  function yesNoQuestions() {
-
-    for (var i = 0; i < myYesNoQuestions.length; i++) {
-      var userAnswer = prompt(myYesNoQuestions[i][0]);
-      userAnswer = userAnswer.charAt(0);
-      if (userAnswer.toUpperCase() === myYesNoQuestions[i][1]) {
-        alert(myYesNoQuestions[i][2]);
-        tallyScore++;
-      }
-      else {
-        alert('Wrong! Next question!');
-      }
-    }
-  };
-  yesNoQuestions();
-
-
-  function questionSix() {
-    var userResponsePet = prompt('What is one of my pet\'s name?');
-    userResponsePet = userResponsePet.toUpperCase();
-
-    if(answersSixOptions.indexOf(userResponsePet) !== -1){
-      alert('Awesome job!!');
-      tallyScore = tallyScore + 1;
-    } else {
-      alert('You\'re wrong!');
-    };
-
-    console.log('Question five complete')
-  }
-  questionSix();
   //
-  function questionSeven() {
-    alert('Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?');
-
-    var userLanguageResponse1 = prompt('Enter answer one here.');
-    userLanguageResponse1 = userLanguageResponse1.toUpperCase();
-
-    var userlanguagResponse2 = prompt('Enter answer two here.');
-    userlanguagResponse2 = userlanguagResponse2.toUpperCase();
-
-    if (userLanguageResponse1 === 'FRENCH'){
-      alert('Very well done, you got the first one right!');
-    } else if (userLanguageResponse1 === 'ENGLISH') {
-      alert('Very well done, you got the first one right!');
-    } else{
-      alert('Wrong! Let\'s check your other answer!');
-    };
-
-    if (userlanguagResponse2 === 'FRENCH'){
-      alert('Very well done, you got the second one right!');
-    } else if (userlanguagResponse2 === 'ENGLISH') {
-      alert('Very well done, you got the second one right!');
-    } else{
-      alert('Wrong!');
-    };
-
-    if ((userLanguageResponse1 === 'FRENCH') && (userlanguagResponse2 === 'ENGLISH')) {
-      alert('Awesome you got them both right!');
-      tallyScore = tallyScore + 1;
-    } else if ((userLanguageResponse1 === 'ENGLISH') && (userlanguagResponse2 === 'FRENCH')) {
-      alert('Awesome you got them both right!');
-      tallyScore = tallyScore + 1;
-    } else {
-      alert('On to the next question!');
-    };
-
-    console.log('Question six complete');
-  }
-  questionSeven();
+  // function yesNoQuestions() {
   //
-  function questionEight() {
-    var userNumber = parseInt(prompt('I am thinking of a number between 1 and 10, what is it?? (You have 4 guesses)'));
-
-    while (counterSeven < 4){
-      counterSeven = counterSeven + 1;
-      if(userNumber === myNumber){
-        alert('Great job ' + userName +', you guessed my number!');
-        tallyScore = tallyScore + 1;
-
-        break;
-      }
-      if(counterSeven === 4){
-        alert(userName + ', You used all your guesses, NO SOUP FOR YOU!')
-      }
-      else if(userNumber > myNumber){
-        alert('That number is to high!');
-        userNumber = parseInt(prompt('What number am I thinking of?'));
-      }
-      else if(userNumber < myNumber){
-        alert('That number is too low!');
-        userNumber = parseInt(prompt('What number am I thinking of?'));
-      }
-      else{
-        alert('Please enter a number.');
-        userNumber = parseInt(prompt('What number am I thinking of?'));
-      }
-    };
-  }
-  questionEight();
+  //   for (var i = 0; i < myYesNoQuestions.length; i++) {
+  //     var userAnswer = prompt(myYesNoQuestions[i][0]);
+  //     userAnswer = userAnswer.charAt(0);
+  //     if (userAnswer.toUpperCase() === myYesNoQuestions[i][1]) {
+  //       alert(myYesNoQuestions[i][2]);
+  //       tallyScore++;
+  //     }
+  //     else {
+  //       alert('Wrong! Next question!');
+  //     }
+  //   }
+  // };
+  // yesNoQuestions();
+  //
+  //
+  // function questionSix() {
+  //   var userResponsePet = prompt('What is one of my pet\'s name?');
+  //   userResponsePet = userResponsePet.toUpperCase();
+  //
+  //   if(answersSixOptions.indexOf(userResponsePet) !== -1){
+  //     alert('Awesome job!!');
+  //     tallyScore = tallyScore++;
+  //   } else {
+  //     alert('You\'re wrong!');
+  //   };
+  //
+  //   console.log('Question five complete')
+  // }
+  // questionSix();
+  // //
+  // function questionSeven() {
+  //   alert('Time for a two part answer question! You have to get both answers to be right! What two languages do I speak?');
+  //
+  //   var userLanguageResponse1 = prompt('Enter answer one here.');
+  //   userLanguageResponse1 = userLanguageResponse1.toUpperCase();
+  //
+  //   var userlanguagResponse2 = prompt('Enter answer two here.');
+  //   userlanguagResponse2 = userlanguagResponse2.toUpperCase();
+  //
+  //   if (userLanguageResponse1 === 'FRENCH'){
+  //     alert('Very well done, you got the first one right!');
+  //   } else if (userLanguageResponse1 === 'ENGLISH') {
+  //     alert('Very well done, you got the first one right!');
+  //   } else{
+  //     alert('Wrong! Let\'s check your other answer!');
+  //   };
+  //
+  //   if (userlanguagResponse2 === 'FRENCH'){
+  //     alert('Very well done, you got the second one right!');
+  //   } else if (userlanguagResponse2 === 'ENGLISH') {
+  //     alert('Very well done, you got the second one right!');
+  //   } else{
+  //     alert('Wrong!');
+  //   };
+  //
+  //   if ((userLanguageResponse1 === 'FRENCH') && (userlanguagResponse2 === 'ENGLISH')) {
+  //     alert('Awesome you got them both right!');
+  //     tallyScore = tallyScore++;
+  //   } else if ((userLanguageResponse1 === 'ENGLISH') && (userlanguagResponse2 === 'FRENCH')) {
+  //     alert('Awesome you got them both right!');
+  //     tallyScore = tallyScore++;
+  //   } else {
+  //     alert('On to the next question!');
+  //   };
+  //
+  //   console.log('Question six complete');
+  // }
+  // questionSeven();
+  // //
+  // function questionEight() {
+  //   var userNumber = parseInt(prompt('I am thinking of a number between 1 and 10, what is it?? (You have 4 guesses)'));
+  //
+  //   while (counterSeven < 4){
+  //     counterSeven = counterSeven + 1;
+  //     if(userNumber === myNumber){
+  //       alert('Great job ' + userName +', you guessed my number!');
+  //       tallyScore = tallyScore++;
+  //
+  //       break;
+  //     }
+  //     if(counterSeven === 4){
+  //       alert(userName + ', You used all your guesses, NO SOUP FOR YOU!')
+  //     }
+  //     else if(userNumber > myNumber){
+  //       alert('That number is to high!');
+  //       userNumber = parseInt(prompt('What number am I thinking of?'));
+  //     }
+  //     else if(userNumber < myNumber){
+  //       alert('That number is too low!');
+  //       userNumber = parseInt(prompt('What number am I thinking of?'));
+  //     }
+  //     else{
+  //       alert('Please enter a number.');
+  //       userNumber = parseInt(prompt('What number am I thinking of?'));
+  //     }
+  //   };
+  // }
+  // questionEight();
   //
   function questionNine() {
+    var numberOfGuesses = 0;
+
     for(var i = 0; i < 6; i++){
       var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA'];
       var userPlacesAnswers = prompt('Last one! Can you guess another country I\'ve lived in?');
@@ -132,11 +134,16 @@ function testEvent(){
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
         alert('Great job! Your answer was correct!');
-        tallyScore = tallyScore ++;
+        alert('The possible answers were:' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] +', and ' + myPlacesAnswers[2] + '.');
+        tallyScore++;
 
         break;
       }else{
         alert('Please Try again');
+        numberOfGuesses++
+        if(numberOfGuesses === 6){
+          alert('Sorry you ran out of guesses. The possible answers were:' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] +', and ' + myPlacesAnswers[2] + '.');
+        }
       }
     };
   }
