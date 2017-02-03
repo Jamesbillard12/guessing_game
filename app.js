@@ -28,7 +28,7 @@ function testEvent(){
     for (var i = 0; i < myYesNoQuestions.length; i++) {
       var userAnswer = prompt(myYesNoQuestions[i][0]);
       userAnswer = userAnswer.charAt(0);
-      if (userAnswer.toUpperCase() == myYesNoQuestions[i][1]) {
+      if (userAnswer.toUpperCase() === myYesNoQuestions[i][1]) {
         alert(myYesNoQuestions[i][2]);
         tallyScore++;
       }
@@ -131,8 +131,8 @@ function testEvent(){
       userPlacesAnswers = userPlacesAnswers.toUpperCase();
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
-        alert('Great job! your answer was correct!');
-        tallyScore = tallyScore + 1;
+        alert('Great job! Your answer was correct!');
+        tallyScore = tallyScore ++;
 
         break;
       }else{
