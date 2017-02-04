@@ -82,10 +82,10 @@ function testEvent(){
 
     if ((userLanguageResponse1 === 'FRENCH') && (userlanguagResponse2 === 'ENGLISH')) {
       alert('Awesome you got them both right!');
-      tallyScore = tallyScore + 1;
+      tallyScore++;
     } else if ((userLanguageResponse1 === 'ENGLISH') && (userlanguagResponse2 === 'FRENCH')) {
       alert('Awesome you got them both right!');
-      tallyScore = tallyScore + 1;
+      tallyScore++;
     } else {
       alert('On to the next question!');
     };
@@ -101,7 +101,7 @@ function testEvent(){
       counterSeven = counterSeven + 1;
       if(userNumber === myNumber){
         alert('Great job ' + userName +', you guessed my number!');
-        tallyScore = tallyScore + 1;
+        tallyScore++;
 
         break;
       }
@@ -123,8 +123,10 @@ function testEvent(){
     };
   }
   questionEight();
-  //
+
   function questionNine() {
+    var numberOfTries = 0;
+
     for(var i = 0; i < 6; i++){
       var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA'];
       var userPlacesAnswers = prompt('Last one! Can you guess another country I\'ve lived in?');
@@ -132,11 +134,16 @@ function testEvent(){
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
         alert('Great job! your answer was correct!');
-        tallyScore = tallyScore + 1;
+        alert("All possiable answers were: " + myPlacesAnswers[0] + ", " + myPlacesAnswers[1] + ", and" + myPlacesAnswers[2] + ".");
+        tallyScore++;
 
         break;
       }else{
+        numberOfTries++;
         alert('Please Try again');
+          if(numberOfTries === 6){
+            alert("You ran out of tries, all possiable answers were: " + myPlacesAnswers[0] + ", " + myPlacesAnswers[1] + ", and" + myPlacesAnswers[2] + ".");
+          }
       }
     };
   }
