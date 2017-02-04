@@ -28,7 +28,7 @@ function testEvent(){
     for (var i = 0; i < myYesNoQuestions.length; i++) {
       var userAnswer = prompt(myYesNoQuestions[i][0]);
       userAnswer = userAnswer.charAt(0);
-      if (userAnswer.toUpperCase() === myYesNoQuestions[i][1]) {
+      if (userAnswer.toUpperCase() == myYesNoQuestions[i][1]) {
         alert(myYesNoQuestions[i][2]);
         tallyScore++;
       }
@@ -46,7 +46,7 @@ function testEvent(){
 
     if(answersSixOptions.indexOf(userResponsePet) !== -1){
       alert('Awesome job!!');
-      tallyScore = tallyScore++;
+      tallyScore++;
     } else {
       alert('You\'re wrong!');
     };
@@ -82,10 +82,10 @@ function testEvent(){
 
     if ((userLanguageResponse1 === 'FRENCH') && (userlanguagResponse2 === 'ENGLISH')) {
       alert('Awesome you got them both right!');
-      tallyScore = tallyScore++;
+      tallyScore = tallyScore + 1;
     } else if ((userLanguageResponse1 === 'ENGLISH') && (userlanguagResponse2 === 'FRENCH')) {
       alert('Awesome you got them both right!');
-      tallyScore = tallyScore++;
+      tallyScore = tallyScore + 1;
     } else {
       alert('On to the next question!');
     };
@@ -101,7 +101,7 @@ function testEvent(){
       counterSeven = counterSeven + 1;
       if(userNumber === myNumber){
         alert('Great job ' + userName +', you guessed my number!');
-        tallyScore = tallyScore++;
+        tallyScore = tallyScore + 1;
 
         break;
       }
@@ -123,28 +123,20 @@ function testEvent(){
     };
   }
   questionEight();
-
+  //
   function questionNine() {
-    var numberOfGuesses = 0;
-
     for(var i = 0; i < 6; i++){
       var myPlacesAnswers = ['ENGLAND', 'FRANCE', 'CANADA'];
       var userPlacesAnswers = prompt('Last one! Can you guess another country I\'ve lived in?');
       userPlacesAnswers = userPlacesAnswers.toUpperCase();
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
-        alert('Great job! Your answer was correct!');
-        // console.log(myPlacesAnswers);
-        alert('The possible answers were:' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] +', and ' + myPlacesAnswers[2] + '.');
-        tallyScore++;
+        alert('Great job! your answer was correct!');
+        tallyScore = tallyScore + 1;
 
         break;
       }else{
         alert('Please Try again');
-        numberOfGuesses++
-        if(numberOfGuesses === 6){
-          alert('Sorry you ran out of guesses. The possible answers were: ' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] +', and ' + myPlacesAnswers[2] + '.');
-        }
       }
     };
   }
