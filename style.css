@@ -1,5 +1,4 @@
 
-@import url("reset.css");
 
 body {
   background-image: url(http://www.newfoundlandlabrador.com/Content/images/homepage-slides/slide-7.jpg);
@@ -26,9 +25,10 @@ p {
 }
 
 #headerwrap {
-    width: 100%;
-    float: left;
-    margin: 0 auto;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  clear: both;
 }
 
 #header {
@@ -68,14 +68,57 @@ p {
 
 }
 
+#name
+{
+  font-family: heather;
+  opacity: 100;
+  margin-left: 2%;
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  top: 8px;
+}
+#email
+{
+  font-family: heather;
+  font-size: 1.3vw;
+  position: absolute;
+  margin-left: 78%;
+
+
+  text-decoration: none;
+
+  color: white;
+}
+#coverPhoto {
+  width: 24%;
+  position: absolute;
+  left: 53%;
+  top: 33%;
+}
+
+
+
+#button
+{
+  font-size: 15px;
+  margin-bottom: 50px;
+  margin-left: 275px;
+  padding-bottom: 21px;
+  padding-top: 14px;
+  text-decoration-color: white;
+
+  border-color: #5ca612;
+  border-radius: 10px;
+  background-color: #5ca612;
+}
 #leftcolumnwrap {
-    width: 258px;
+    width: 20%;
     margin-left: -100%;
     float: left;
 }
 
 #leftcolumn {
-    background: #33CCFF;
     border-radius: 10px;
     margin: 5px;
     height: 794px;
@@ -105,129 +148,6 @@ p {
     background-color: #5ca612;
 }
 
-
-#name
-{
-  font-family: heather;
-  opacity: 100;
-  margin-left: 2%;
-  position: absolute;
-  color: white;
-  font-size: 2vw;
-  top: 8px;
-}
-#email
-{
-  font-family: heather;
-  font-size: 1.3vw;
-  position: absolute;
-  margin-left: 78%;
-
-
-  text-decoration: none;
-
-  color: white;
-}
-#bold{
-  font-weight: 900;
-}
-
-#left
-{
-
-}
-
-#right
-{
-  float: left;
-  width: 200px;
-  height: 1037px;
-  margin-top: -916px;
-  margin-bottom: 5px;
-  margin-left: 1057px;
-  opacity: 0.5;
-
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
-  background-color: brown;
-}
-
-#small
-{
-  float: left;
-  width: 200px;
-  height: 70px;
-  margin-top: -1132px;
-  margin-bottom: 5px;
-  margin-left: 1057px;
-  opacity: 0.5;
-
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
-  background-color: grey;
-}
-
-#coverPhoto {
-  width: 24%;
-  position: absolute;
-  left: 53%;
-  top: 33%;
-}
-
-.wholeAlign
-{
-  font-family: heather;
-
-
-  padding-left: 10px;
-
-  margin-left: 17.5%;
-  width: 63.5%;
-  height: 90%;
-
-
-  position:static;
-
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
-  border-radius: 5px;
-  background:linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,.77) 47%, rgba(255,146,10,.55) 93%);
-}
-
-#button
-{
-  font-size: 15px;
-  margin-bottom: 50px;
-  margin-left: 275px;
-  padding-bottom: 21px;
-  padding-top: 14px;
-  text-decoration-color: white;
-
-  border-color: #5ca612;
-  border-radius: 10px;
-  background-color: #5ca612;
-}
-
-address
-{
-  position: absolute;;
-  height: 122px;
-  width: 80%;
-  margin-top: 5px;
-  margin-left: 1.5%;
-  opacity: 0.5;
-  top: 998px;
-  left: 5px;
-
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-  background-color: #5ca612;
-}
-
 #addy{
   color: white;
   font-style: italic;
@@ -236,4 +156,8 @@ address
   margin-left: 30%;
   position: absolute;
   margin-top: 1%;
+}
+
+#bold{
+  font-weight: 900;
 }
