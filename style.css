@@ -1,5 +1,4 @@
 
-
 body {
   background-image: url(http://www.newfoundlandlabrador.com/Content/images/homepage-slides/slide-7.jpg);
   background-size: contain;;
@@ -90,11 +89,13 @@ p {
 
   color: white;
 }
+
 #coverPhoto {
   width: 24%;
-  position: absolute;
-  left: 53%;
-  top: 33%;
+    position: relative;
+    right: 6%;
+    padding-top: 5%;
+    float: right;
 }
 
 
