@@ -45,19 +45,6 @@ p {
     border-radius: 10px;
 }
 
-#navigationwrap {
-    width: 100%;
-    float: left;
-    margin: 0 auto;
-}
-
-#navigation {
-    height: 40px;
-    background: #FFCC33;
-    border-radius: 10px;
-    border: 1px solid #ebb81f;
-    margin: 5px;
-}
 
 #contentliquid {
     float: left;
@@ -104,10 +91,7 @@ p {
     margin: 5px;
 }
 
-.about
-{
 
-}
 #name
 {
   font-family: heather;
@@ -123,10 +107,8 @@ p {
   font-family: heather;
   font-size: 1.3vw;
   position: absolute;
-  float: right;
+  margin-left: 78%;
 
-  margin-top: -5%;
-  margin-left: 58%;
 
   text-decoration: none;
 
