@@ -134,7 +134,7 @@ function testEvent(){
 
       if(myPlacesAnswers.indexOf(userPlacesAnswers) !== -1){
         alert('Great job! your answer was correct!');
-        alert("All possiable answers were: " + myPlacesAnswers[0] + ", " + myPlacesAnswers[1] + ", and" + myPlacesAnswers[2] + ".");
+        alert('All possiable answers were: ' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] + ', and ' + myPlacesAnswers[2] + '.');
         tallyScore++;
 
         break;
@@ -142,7 +142,7 @@ function testEvent(){
         numberOfTries++;
         alert('Please Try again');
           if(numberOfTries === 6){
-            alert("You ran out of tries, all possiable answers were: " + myPlacesAnswers[0] + ", " + myPlacesAnswers[1] + ", and" + myPlacesAnswers[2] + ".");
+            alert('You ran out of tries, all possiable answers were: ' + myPlacesAnswers[0] + ', ' + myPlacesAnswers[1] + ', and ' + myPlacesAnswers[2] + '.');
           }
       }
     };
