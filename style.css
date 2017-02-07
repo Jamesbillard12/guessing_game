@@ -1,5 +1,5 @@
 body {
-  background-image: url('/Users/jamesrbillard/programs/code_fellows/code_201/lab_2/guessing_game/images/slide-7.jpg');
+  background-image: url('http://www.newfoundlandlabrador.com/Content/images/homepage-slides/slide-7.jpg');
   background-attachment: fixed;
 }
 
@@ -73,7 +73,7 @@ body {
 
 #rightcolumnwrap{
  flex: 1;
-  background-image: url('/Users/jamesrbillard/programs/code_fellows/code_201/lab_2/guessing_game/images/Me.jpg');
+  background-image: url('https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15741217_10154013950751196_8629262372806978000_n.jpg?oh=c48bb8e9f3e5f7c6cf0b12a55636a76f&oe=5910C778');
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, .5);
   background-position: left center;
