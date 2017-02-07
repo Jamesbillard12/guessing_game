@@ -1,6 +1,6 @@
 body {
   background-image: url('/Users/jamesrbillard/programs/code_fellows/code_201/lab_2/guessing_game/images/slide-7.jpg');
-
+  background-attachment: fixed;
 }
 
 #headerwrap {
@@ -9,6 +9,18 @@ body {
   border-color: black;
   border-radius: 10px;
   color: white;
+}
+
+#name {
+
+  text-align: left;
+}
+
+#email {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+
 }
 
 #main_wrapper {
@@ -25,6 +37,7 @@ body {
   background-color: black;
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  padding-left: 5px;
 
 }
 
